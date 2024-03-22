@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recommendation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      overflow-x: hidden;
+    }
+
+    #red-box-container {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      width: 200px;
+    }
+
+    #red-box {
+      background-color: rgb(133, 13, 13);
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 12px;
+      width: 200px;
+      box-sizing: border-box;
+    }
+
+    #white-box {
+      background-color: white;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 12px;
+      width: 180px;
+      box-sizing: border-box;
+    }
+
+    #grey-box {
+      background-color: #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+      margin-top: 10px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 150px;
+      resize: vertical;
+      overflow-y: scroll;
+    }
+
+    i.required::after {
+      content: " *";
+      color: red;
+    }
+
+    #click-here {
+      color: blue;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="red-box-container">
+    <div id="red-box">
+      <h2 style="color: white; font-size: 14px;">Recommendation Status</h2>
+      <div id="white-box">
+        <!-- Content for the white box -->
+        <p style="margin: 0;"><strong>Your recommendation has not yet been submitted.</strong> If you have completed your recommendation and would like to <span id="click-here">click here</span> to scroll to the bottom of the submission page and then click the <strong>"Submit"</strong> button.</p>
+      </div>
+    </div>
+  </div>
+
+  <h1>Recommendation</h1>
+
+  <div id="grey-box">
+    <label for="applicant">Applicant :</label>
+    <input list="applicant-list" name="applicant" id="applicant">
+    <datalist id="applicant-list">
+      <option value="Undergraduate students">
+      <option value="Master's level students">
+      <option value="Doctoral level students">
+      <option value="Other">
+    </datalist>
+    <br>
+    <p><strong>Applying to</strong> Stanford University Graduate Admissions</p>
+    <p><strong>Recommender</strong> Satish C J</p>
+  </div>
+
+  <h2> Applicant Information</h2>
+  <p><strong>Applicant Name:</strong> Shreya Gupta</p>
+  <p> Once you are a student in attendance, the Family Educational Rights and Privacy Act of 1974 (FERPA) provides you with a right of access to your education
+    record, including letters of reference if they are retained by the school. FERPA also permits students to waive the right of access to letters of reference if you
+    so choose. Waiving your right of access is optional; your decision to waive that right will have no bearing on the handling of your 
+    application. Your recommendation will see your choice. 
+  </p>
+  <p><strong>[X] I waive my right to access this report.</strong></p>
+  <p>[ ] I do not waive my right to this report.</p>
+  <p> Signed by: </p>
+  <p><i> This recommendation will remain confidential during the admission process, regardless of the applicant's waiver response above. If the applicant did not waive
+    the right to view the recommendation and later enrolls in the graduate program selected on this application, the applicant may read this recommendation.
+  </i></p>
+  <br>
+  <p><i class="required"> Required fields are indicated with</i></p>
+
+  <h2>Recommender Information</h2>
+  <form id="recommender-info-form">
+    <p>The below information was provided by the applicant. To make edits, check the box at the bottom of this section.</p>
+    <label for="A">Prefix <i class="required">*</i></label>
+    <input list="prefixList" name="A" id="A">
+    <datalist id="prefixList">
+      <option value="Ms.">
+      <option value="Mrs.">
+      <option value="Dr.">
+    </datalist>
+    <br>
+    <label for="fname">First name <i class="required">*</i></label>
+    <input type="text" id="fname" name="fname">
+    <br>
+    <label for="lname">Last name <i class="required">*</i></label>
+    <input type="text" id="lname" name="lname">
+    <br>
+    <label for="org">Organization <i class="required">*</i></label>
+    <input type="text" id="org" name="org">
+    <br>
+    <label for="position">Position/Title <i class="required">*</i></label>
+    <input type="text" id="position" name="position">
+    <br>
+    <label for="phone">Phone <i class="required">*</i></label>
+    <input type="text" id="phone" name="phone">
+    <br>
+    <label>
+      <input type="checkbox" id="myCheckbox" name="myCheckbox">
+      Check this box to update your information above.
+    </label>
+    <br>
+  </form>
+  <br>
+  <br>
+
+  <h2>Evaluation Questions</h2>
+  <form id="evaluation-questions-form">
+    <label for="ques1">Please identify the most selective group to which you are comparing the applicant.<i class="required">*</i>:</label>
+    <br>
+    <input list="groupList" name="ques1" id="ques1">
+    <datalist id="groupList">
+      <option value="Undergraduate students">
+      <option value="Postgraduate students">
+      <option value="Doctoral level students">
+      <option value="Other">
+    </datalist>
+    <br>
+    <br>
+
+    <label for="ques2">How many years have you evaluated people in this group?<i class="required">*</i>:</label>
+    <br>
+    <input list="yearsList" name="ques2" id="ques2">
+    <datalist id="yearsList">
+      <option value="1-3 years">
+      <option value="3-5 years">
+      <option value="5-8 years">
+      <option value="8-10 years">
+      <option value="More than 10 years">
+    </datalist>
+    <br>
+    <br>
+
+    <label for="ques3">Approximately how many people are in the group, totaled over those years?<i class="required">*</i>:</label>
+    <br>
+    <input list="peopleList" name="ques3" id="ques3">
+    <datalist id="peopleList">
+      <option value="less than 5">
+      <option value="5-10">
+      <option value="10-13">
+      <option value="14-18">
+      <option value="18-25">
+      <option value="More than 25">
+    </datalist>
+    <br>
+    <br>
+
+    <label for="ques4">In overall ability (as appropriate to graduate studies) this candidate is among the.<i class="required">*</i>:</label>
+    <br>
+    <input list="abilityList" name="ques4" id="ques4">
+    <datalist id="abilityList">
+      <option value="Top 1-2%">
+      <option value="Top 5%">
+      <option value="Top 10%">
+      <option value="Top 25%">
+      <option value="Second quarter">
+      <option value="Third quarter">
+      <option value="Bottom quarter">
+      <option value="No basis for judgment">
+    </datalist>
+    <br>
+    <br>
+
+    <label for="ques5">Admission to graduate study at Stanford University is:<i class="required">*</i>:</label>
+    <br>
+    <input list="admissionList" name="ques5" id="ques5">
+    <datalist id="admissionList">
+      <option value="Strongly recommended">
+      <option value="Recommended">
+      <option value="Recommended with reservations">
+      <option value="NOT recommended">
+    </datalist>
+    <br>
+    <br>
+  </form>
+
+  <h2>Letter of Recommendation</h2>
+  <form id="recommendation-letter-form">
+    <p> Upload your letter of recommendation below:<i class="required">*</i> </p>
+    <label for="fileInput">Choose File:</label>
+    <input type="file" id="fileInput" name="fileInput">
+    <span>No file chosen</span>
+
+    <p>Or, type or copy-and-paste your document here:</p>
+    <textarea cols="100" rows="5" value="Special Requests"></textarea>
+       <br>
+    <p>Please note that this recommendation, in addition to being used in the admission process for the applicant's selected graduate program, may be used: as part
+       of the selection process for a different graduate program, for a research group, or laboratory, for a research or teaching assistantship, or for an honor or award; 
+       in connection with academic mentoring during the period of the student's enrollment; or for financial support derived from any
+       source available to Stanford. </p>
+  </form>
+
+  <h2>Submission</h2>
+  <form id="submission-form">
+    <label for="fname">In place of your signature, please type your full legal name:<i class="required">*</i></label>
+    <br>
+    <input type="text" id="fname" name="fname">
+    <div style="background-color: rgb(131, 13, 13); padding: 10px; margin: 10px;">
+      <p style="color: white;"> Please note that you may not edit your recommendation after submission.
+        Do you want to submit your recommendation now? Click the "Submit" button below.
+      </p>
+    </div>
+    <br>
+    <button onclick="submitForm()">Submit</button>
+  <button onclick="previewForm()">Preview</button>
+  <button onclick="saveForLater()">Save for Later</button>
+
+  <script>
+    function submitForm() {
+      alert("Submitting form!");
+    }
+
+    function previewForm() {
+      alert("Previewing form!");
+    }
+
+    function saveForLater() {
+      alert("Saving for later!");
+    }
+  </script>
+
+  </form>
+
+</body>
+</html>
+
+
