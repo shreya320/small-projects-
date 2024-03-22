@@ -1,0 +1,144 @@
+.first{
+    border:2px solid white;
+    background-color: white;
+    box-shadow: 3px 3px 5px 3px rgb(199, 198, 198);
+    height:60px;
+    width:100%;
+    border-radius: 5px;
+    display:flex;
+    flex-wrap:row wrap;
+    justify-content: space-between;
+    position:fixed;
+    top:10px;
+    left:5px;
+    }
+    .codespindle img{
+    padding-top:15px;
+    width:150px;
+    }
+    .welcome h2{
+    text-decoration: underline;
+    color:rgb(175, 173, 173);
+    }
+    .navbar{
+    width:200px;
+    display:flex;
+    flex-wrap:row wrap;
+    justify-content:space-evenly;
+    padding-top:40px;
+    font-weight: bold ;
+    }
+    .second{
+    height:270px;
+    position:relative;
+    top:80px;
+    display:flex;
+    flex-wrap:row wrap;
+    }
+    .sub-second{
+    margin:5px;
+    width:600px;
+    padding:2px;
+    border-radius:5px;
+    box-shadow:2px 2px 2px 5px rgb(199, 198, 198);
+    }
+    #sub-1{
+    padding:5px;
+    font-size:15px;
+    }
+    #sub-1 img{
+    padding:5px;
+    padding-top:10px;
+    padding-left:40px;
+    height:70px;
+    width:200px;
+    }
+    #sub-2{
+    width:500px;
+    }
+    #sub-2 img{
+    width:500px;
+    height:257px;
+    }
+    #sub-3{
+    padding:5px;
+    font-size:17px;
+    background-color:rgb(99, 98, 98);
+    color:white;
+    }
+    .course{
+    position:relative;
+    top:90px;
+    font-size: 20px;
+    }
+    .line1{
+    background-color: rgb(143, 143, 143);
+    height:7px;
+    width:100%;
+    position:absolute;
+    top:400px;
+    }
+    .third{
+    position:relative;
+    top:80px;
+    display:flex;
+    flex-wrap:row wrap;
+    justify-content: space-between;
+    }
+    .js{
+    border:4px solid black;
+    margin:30px;
+    height:300px;
+    width:300px;
+    }
+    .JS{
+    height:200px;
+    width:300px;
+    }
+    .third .line2{
+    border:3px solid rgb(154, 153, 153);
+    }
+    .be{
+    padding-left:40px;
+    height:60px;
+    }
+    #be1{
+    background-color: rgb(244, 244, 160);
+    }
+    #be2{
+    background-color: rgb(244, 244, 160);
+    }
+    #be3{
+    background-color: rgb(209, 209, 253);
+    }
+    #be4{
+    background-color: rgb(209, 209, 253);
+    }
+    .fourth{
+    position:absolute;
+    top:720px;
+    display:flex;
+    flex-wrap:row wrap;
+    width:100%;
+    height:300px;
+    }
+    .contact{
+    width:30%;
+    padding:50px;
+    background-color: rgb(99, 98, 98);
+    color:white;
+    }
+    .contact h3{
+    text-decoration: underline;
+    }
+    .clg{
+    width:75%;
+    }
+    .clg img{
+    height:300px;
+    width:100%;
+    }
+
+.graph{
+    padding-left:75px;
+}
