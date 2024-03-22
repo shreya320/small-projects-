@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class work 4</title>
+    <link rel="stylesheet" href="20thlast.css">
+</head>
+<body>
+    <div class="box1" id="one">
+        <p class="heading1">General settings</p>
+        <p class="text1">Server connecting collation:</p>
+        <label for="code"></label>
+    <select name="code" id="code">
+      <option value="option1">utf8mb4_unicode_ci</option>
+      <option value="option2">utf8mb3_unicode_ci</option>
+    </select>
+    <p class="text2">More settings</p>
+    </div>
+
+    <div class="box1" id="two">
+        <p class="heading1">Database server</p>
+        <ul>
+            <li>Server: Localhost via UNIX socket</li>
+            <li>Server type: Percona Server</li>
+            <li>Server connection: SSL is not being used ?</li>
+            <li>Server version: 5.7.23-23 - Percona Server (GPL), Release 23, Revision 500fcf5</li>
+            <li>Protocol version: 10</li>
+            <li>User: cpses_co112p0yij@localhost</li>
+            <li>Server charset: UTF-8 Unicode (utf8)</li>
+        </ul>
+    </div>
+
+    <div class="box1" id="three">
+        <p class="heading1">Web server</p>
+        <ul>
+            <li>cpsrvd 11.110.0.23</li>
+            <li>Database client version: libmysql - mysqlnd 8.1.27</li>
+            <li>PHP extension: mysqli ? curl ? mbstring ?</li>
+            <li>PHP version: 8.1.27</li>
+        </ul>
+    </div>
+
+    <div class="box1" id="four">
+        <p class="heading1">Appearance settings</p>
+        <p class="text5">Language</p>
+        <label for="lang"></label>
+
+    <select name="lang" id="lang">
+      <option value="option1">English</option>
+      <option value="option2">Hindi</option>
+    </select>
+
+    <p class="text4">Theme</p>
+
+    <select name="theme" id="theme">
+        <option value="option1">pmahomme</option>
+        <option value="option2">black and white</option>
+      </select>
+
+      <p class="text3">View all</p>
+    </div>
+
+    <div class="box2">
+        <div class="image-container">
+        <img src="data:image/png;base64,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" alt="image" width="200px" height="140px"> <br>       
+    </div>
+    <div class="text-container">
+    <p class="1">Recents</p>
+        <p class="1">Favourites</p>
+    </div>
+</div>
+
+<div class="box1" id="six">
+    <p class="heading3">Server:localhost:3306</p>
+    <p class="text">Databases SQL Status Export Import Settings Variables Charsets Engines Plugins 
+    </p>
+    
+</div>
+
+</body>
+
