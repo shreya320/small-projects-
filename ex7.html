@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VTOP</title>
+    <style> 
+    h1 {
+        text-align: center;
+        color: rgb(0, 119, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+    }
+    .sub {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: x-small;
+        font-weight: bold;
+        text-align: center;
+    }
+    .blue-box {
+        background-color: rgb(42, 151, 247);
+        color: white;
+        padding: 18px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .blue-box img {
+        max-width: 50px;
+        margin-right: 10px;
+    }
+    .logo-text {
+        font-size: small;
+    }
+    .boxes-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 80px 0;
+    }
+    .box {
+        flex: 1;
+        background-color: white;
+        padding: 30px;
+        border-radius: 1% 1% 1% 1%;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+        height: 120px;
+        margin-right: 60px; 
+        position: relative;
+    }
+
+    .box:last-child {
+        margin-right: 0; 
+    }
+
+    .box img {
+        max-width: 80px;
+        height: auto;
+        margin-right: 50px;
+    }
+
+    .blue-small-box,
+    .gold-small-box,
+    .green-small-box,
+    .light-small-box {
+        width: 70px;
+        height: 70px;
+        background-color: white;
+        position: absolute;
+        top: 50px;
+        right: 80px; /* Adjusted right position */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .blue-small-box { background-color: rgb(42, 151, 247); }
+    .gold-small-box { background-color: rgb(232, 221, 15); }
+    .green-small-box { background-color: rgb(10, 143, 8); }
+    .light-small-box { background-color: rgb(42, 240, 247); }
+
+    .small-box p {
+        margin: 0;
+        color: white;
+        font-size: x-small;
+    }
+    
+    .box:nth-child(1) { border-top: 1.5px solid #479aff; }
+    .box:nth-child(2) { border-top: 1.5px solid #cecb13; }
+    .box:nth-child(3) { border-top: 1.5px solid #1d780b; }
+    .box:nth-child(4) { border-top: 1.5px solid #47eaff; }
+
+    .new-box-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .new-box-left {
+        flex: 2;
+        background-color: white;
+        padding: 20px; /* Adjusted padding */
+        height: 150px;
+        margin-right: 10px;
+        box-shadow: 0px 16px 8px rgba(0, 0, 0, 0.1);
+        border-top: 2px solid #d35640;
+    }
+
+    .new-box-left h2 {
+        font-size: small;
+        margin-bottom: 3px;
+        color: red; 
+    }
+
+    .new-box-left ul {
+        font-size: small;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .new-box-left ul li {
+        margin-bottom: 10px;
+        font-size: xx-small;
+    }
+
+    .new-box-right {
+        flex: 2;
+        background-color: white;
+        padding: 20px; /* Adjusted padding */
+        height: 75px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+        border-top: 2px solid #d35640;
+    }
+
+    .new-box-right h2 {
+        font-size: small;
+        margin-bottom: 3px;
+        color: red;
+    }
+
+    .new-box-right ul {
+        font-size: small;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .new-box-right ul li {
+        margin-bottom: 3px;
+        font-size: xx-small;
+    }
+    </style>
+</head>
+<body>
+    <div class="blue-box">
+        <img src="https://web.vit.ac.in/CertificateVerification/assets/img/vitlogo.png" alt="(Vellore campus)">
+        <span class="logo-text">(Vellore campus)</span>
+    </div>
+    <h1>VTOP translates to "VIT on TOP"</h1>
+    <p class="sub">A digital initiative by the institute facilitating Faculty, Staff, Students, Parents and Alumni to access 
+        and process Academics, Research, Supporting services at one common platform.</p>
+    
+        <div class="boxes-container">
+            <div class="box">
+                <img src="https://vtop.vit.ac.in/vtop/assets/img/students.png" alt="(student login)">
+                <div class="blue-small-box">
+                    <p>Student</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://vtop.vit.ac.in/vtop/assets/img/employee.png" alt="(employee login)">
+                <div class="gold-small-box">
+                    <p>Employee</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://vtop.vit.ac.in/vtop/assets/img/parent.png" alt="(parent login)">
+                <div class="green-small-box">
+                    <p>Parent</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://vtop.vit.ac.in/vtop/assets/img/alumni.png" alt="(alumni login)">
+                <div class="light-small-box">
+                    <p>Alumni</p>
+                </div>
+            </div>
+        </div>
+
+    <div class="new-box-container">
+        <div class="new-box-left">
+            <h2>Vellore Institute of Technology (VIT), India</h2>
+            <ul>
+                <li>Ranked among the top 601-700 Universities of the world and one among 
+                    the top 3 institutions in India (Shanghai ARWU Ranking 2022)
+                </li>
+                <li>The 8th best university, the 11th best research institution, and the 11th best
+                    engineering institution in India (NIRF Ranking, Govt. of India 2023)
+                </li>
+                <li>
+                    Engineering and Technology subject areas of VIT are the 240th best in the World and the 9th best in India,
+                    eight subjects of VIT are within the top 500 in the world (as per QS World University Rankings by Subject 2023)
+                </li>
+                <li>
+                    NAAC Accreditation with A++ grade (3.66 out of 4)
+                </li>
+                <li>Ranked within the top 200 Universities in Asia (QS-Asia University Rankings-2023)</li>
+            </ul>
+        </div>
+        <div class="new-box-right">
+            <h2>Spotlight</h2>
+            <ul>
+                <li><u>HOSTEL VACATING CONSENT FORM</u></li>
+                <li><u>ISSUE FACED IN ACCESSING VTOP FOR JIO USERS</u></li>
+                <li><u>STUDENT CODE OF CONDUCT: WARNING NOTICE</u></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
